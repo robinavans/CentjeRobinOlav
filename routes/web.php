@@ -14,3 +14,24 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/rekeningen', function () {
+    return view('rekeningen');
+});
+
+Route::get('/kalender', function () {
+    return view('kalender');
+});
+
+Route::get('/betaalverzoeken', function () {
+    return view('betaalverzoeken');
+});
+
+Route::get('/contacten', function () {
+    return view('contacten');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
