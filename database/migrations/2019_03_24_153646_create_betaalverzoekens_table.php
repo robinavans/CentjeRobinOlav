@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Betaalverzoeken extends Migration
+class CreateBetaalverzoekensTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,13 @@ class Betaalverzoeken extends Migration
      */
     public function up()
     {
-        Schema::create('betaalverzoeken', function (Blueprint $table) {
+        Schema::create('betaalverzoekens', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('Userid');
             $table->string('name');
             $table->string('description');
-            $table->integer('bedrag');
-/*            $table->rememberToken();
-            $table->timestamps();*/
+            $table->integer('amount');
         });
-        //
     }
 
     /**
@@ -32,8 +29,6 @@ class Betaalverzoeken extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('betaalverzoeken');
-
-        //
+        Schema::dropIfExists('betaalverzoekens');
     }
 }
