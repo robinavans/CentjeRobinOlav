@@ -23,12 +23,18 @@ Route::get('/kalender', function () {
     return view('kalender');
 });
 
-Route::get('/betaalverzoeken', function () {
-    return view('betaalverzoeken');
-});
+Route::get('/betaalverzoeken', 'BetaalVerzoekenController@index')-> middleware('auth');
 
 Route::get('/contacten', function () {
     return view('contacten');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/register', function () {
+    return view('register');
 });
 
 Auth::routes();
