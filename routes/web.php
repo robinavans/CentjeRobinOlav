@@ -24,6 +24,7 @@ Route::get('/kalender', function () {
 });
 
 Route::get('/betaalverzoeken', 'BetaalVerzoekenController@index')-> middleware('auth');
+Route::get('/nieuwverzoek', 'BetaalVerzoekenController@create')-> middleware('auth');
 
 Route::get('/contacten', function () {
     return view('contacten');
@@ -40,4 +41,7 @@ Route::get('/register', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/nieuwverzoek', 'BetaalVerzoekenController@store');
+
 

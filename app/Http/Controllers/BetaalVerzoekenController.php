@@ -12,9 +12,26 @@ class BetaalVerzoekenController extends Controller
     {
         $verzoeken = betaalverzoeken::where('Userid', '=', Auth::user()->getAuthIdentifier())->get();
 
-        return view('betaalverzoeken', ['verzoeken' => $verzoeken]);
+        return view('betaalverzoeken.betaalverzoeken', ['verzoeken' => $verzoeken]);
     }
 
+    public function create()
+    {
+        return view('betaalverzoeken.create');
+    }
 
+    public function  store()
+    {
+        $betaalverzoek = new betaalverzoeken();
+
+        $betaalverzoek->Userid = Auth::user()->getAuthIdentifier();
+        $betaalverzoek->name = request('name');
+        $betaalverzoek->description = request('description');
+        $betaalverzoek->amount = request('amount');
+
+        $betaalverzoek->save();
+       return redirect('/betaalverzoeken');
+
+    }
 
 }
