@@ -15,9 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/rekeningen', function () {
-    return view('rekeningen');
-});
+Route::get('/rekeningen', 'RekeningenController@index')->middleware('auth');
+Route::get('/createrekening', 'RekeningenController@create')->middleware('auth');
 
 Route::get('/kalender', function () {
     return view('kalender');
@@ -43,5 +42,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/nieuwverzoek', 'BetaalVerzoekenController@store');
+
+Route::post('/nieuwerekening', 'RekeningenController@store');
 
 
