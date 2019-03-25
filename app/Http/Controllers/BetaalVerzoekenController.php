@@ -22,7 +22,7 @@ class BetaalVerzoekenController extends Controller
         return view('betaalverzoeken.create', ['rekeningen' => $rekeningen]);
     }
 
-    public function  store(Request $request)
+    public function store(Request $request)
     {
         $request->validate([
             'name' => 'required|max:255',
@@ -41,8 +41,6 @@ class BetaalVerzoekenController extends Controller
         $betaalverzoek->Rekeningid = request('rekening');
 
         $betaalverzoek->save();
-       return redirect('/betaalverzoeken');
-
+        return redirect('/betaalverzoeken');
     }
-
 }

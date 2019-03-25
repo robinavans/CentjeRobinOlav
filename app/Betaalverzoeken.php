@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class betaalverzoeken extends Model
+class BetaalVerzoeken extends Model
 {
     public $timestamps = false;
 }

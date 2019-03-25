@@ -44,5 +44,3 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/nieuwverzoek', 'BetaalVerzoekenController@store');
 
 Route::post('/nieuwerekening', 'RekeningenController@store');
-
-
