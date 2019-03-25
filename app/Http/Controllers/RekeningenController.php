@@ -13,7 +13,7 @@ class RekeningenController extends Controller
     {
         $rekeningen = rekeningen::where('Userid', '=', Auth::user()->getAuthIdentifier())->get();
 
-        return view("Rekeningen.Rekeningen",['rekeningen' => $rekeningen]);
+        return view("Rekeningen.Rekeningen", ['rekeningen' => $rekeningen]);
     }
 
     public function create()
@@ -21,7 +21,7 @@ class RekeningenController extends Controller
         return view('rekeningen.create');
     }
 
-    public function  store(Request $request)
+    public function store(Request $request)
     {
         $request->validate([
             'name' => 'required|max:255',
