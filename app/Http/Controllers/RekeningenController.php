@@ -21,8 +21,14 @@ class RekeningenController extends Controller
         return view('rekeningen.create');
     }
 
-    public function  store()
+    public function  store(Request $request)
     {
+        $request->validate([
+            'name' => 'required|max:255',
+            'description' => 'required|max:255',
+            'amount' => 'required',
+            'rekeningnummer' => 'required',
+        ]);
         $rekening = new rekeningen();
 
         $rekening->Userid = Auth::user()->getAuthIdentifier();

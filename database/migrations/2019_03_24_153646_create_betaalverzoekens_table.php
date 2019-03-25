@@ -16,6 +16,7 @@ class CreateBetaalverzoekensTable extends Migration
         Schema::create('betaalverzoekens', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('Userid');
+            $table->integer('Rekeningid');
             $table->string('name');
             $table->string('description');
             $table->integer('amount');

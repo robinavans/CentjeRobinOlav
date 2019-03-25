@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
         ]);
         DB::table('betaalverzoekens')->insert([
             'Userid' => '1',
+            'Rekeningid' => '1',
             'name' => 'Eten',
             'description' => 'Zou je dit willen betalen?',
             'amount' => '100',
