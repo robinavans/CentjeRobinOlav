@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBetaalverzoekensTable extends Migration
+class CreateRekeningensTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateBetaalverzoekensTable extends Migration
      */
     public function up()
     {
-        Schema::create('betaalverzoekens', function (Blueprint $table) {
+        Schema::create('rekeningens', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('Userid');
-            $table->string('name');
-            $table->string('description');
-            $table->integer('amount');
-            $table->integer('amountpaid');
+            $table->string('Name');
+            $table->string('rekeningnummer');
+            $table->decimal('vermogen');
         });
     }
 
@@ -30,6 +29,6 @@ class CreateBetaalverzoekensTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('betaalverzoekens');
+        Schema::dropIfExists('rekeningens');
     }
 }

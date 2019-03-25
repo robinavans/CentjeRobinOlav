@@ -21,6 +21,13 @@ class DatabaseSeeder extends Seeder
             'name' => 'Eten',
             'description' => 'Zou je dit willen betalen?',
             'amount' => '100',
+            'amountpaid' => 0,
+        ]);
+        DB::table('rekeningens')->insert([
+            'Userid' => '1',
+            'name' => 'Eerste rekening',
+            'rekeningnummer' => '1234SNSB2023289328942',
+            'vermogen' => '100',
         ]);
     }
 }
