@@ -43,4 +43,10 @@ class BetaalVerzoekenController extends Controller
         $betaalverzoek->save();
         return redirect('/betaalverzoeken');
     }
+
+    public function delete(Request $request)
+    {
+        betaalverzoeken::find($request->id)->delete();
+        return redirect('/betaalverzoeken');
+    }
 }

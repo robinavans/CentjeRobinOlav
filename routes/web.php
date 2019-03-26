@@ -46,3 +46,5 @@ Route::post('/nieuwverzoek', 'BetaalVerzoekenController@store');
 Route::post('/nieuwerekening', 'RekeningenController@store');
 
 Route::post('/deleterekening', 'RekeningenController@delete');
+
+Route::post('/deleteverzoek', 'BetaalVerzoekenController@delete');

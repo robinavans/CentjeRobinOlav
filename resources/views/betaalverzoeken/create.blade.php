@@ -24,7 +24,6 @@
             <br><a>Op rekening:</a>
 
             <select name="rekening" data-validate = "Een rekening is verplicht!">
-                <option value=null>Geen rekening</option>
                 @foreach($rekeningen as $rekening)
                     <option value={{ $rekening->id }}>{{ $rekening->Name }}</option>
                 @endforeach

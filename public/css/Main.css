@@ -7,6 +7,7 @@
     margin:20px;
 }
 table, td, th {
+    max-width: 700px;
     border: 1px solid #ddd;
     text-align: left;
 }

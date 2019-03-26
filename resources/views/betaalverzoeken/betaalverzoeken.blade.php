@@ -28,9 +28,23 @@
                     <a>{{ $verzoek->description }}</a>
             </td>
             <td>
-                    {{ $verzoek->amount }} <br>
+                    <a>{{ $verzoek->amount }} </a> <br>
             </td>
-            </a>
+            <td>
+                <button>Betaalverzoek delen</button>
+            </td>
+            @if($verzoek->amountpaid <= 0)
+                <td>
+                    <form method="post" action="/deleteverzoek">
+                        {{ csrf_field() }}
+                        <input type="hidden" name="id" value="{{ $verzoek->id }}">
+                        <button type="submit" class="btn btn-danger">
+                            Verwijder verzoek
+                        </button>
+                    </form>
+                </td>
+
+                @endif
         </tr>
         @endforeach
             @endif

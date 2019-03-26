@@ -13,7 +13,7 @@ class CreateBetaalverzoekensTable extends Migration
      */
     public function up()
     {
-        Schema::create('betaalverzoekens', function (Blueprint $table) {
+        Schema::create('betaal_verzoekens', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('Userid');
             $table->integer('Rekeningid');
@@ -31,6 +31,6 @@ class CreateBetaalverzoekensTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('betaalverzoekens');
+        Schema::dropIfExists('betaal_verzoekens');
     }
 }
