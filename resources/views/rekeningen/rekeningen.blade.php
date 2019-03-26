@@ -28,9 +28,18 @@
                             <a>{{ $rekening->rekeningnummer }}</a>
                         </td>
                         <td>
-                            {{ $rekening->vermogen }} <br>
+                            <a>{{ $rekening->vermogen }}</a> <br>
                         </td>
-                        </a>
+                        <td>
+                            <form method="post" action="/deleterekening">
+                                {{ csrf_field() }}
+                                <input type="hidden" name="id" value="{{ $rekening->id }}">
+                            <button type="submit" class="btn btn-danger">
+                                Verwijder rekening
+                            </button>
+                            </form>
+                        </td>
+
                     </tr>
                 @endforeach
                 @endif

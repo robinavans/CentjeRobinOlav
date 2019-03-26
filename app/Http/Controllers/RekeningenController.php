@@ -38,6 +38,11 @@ class RekeningenController extends Controller
 
         $rekening->save();
         return redirect('/rekeningen');
+    }
 
+    public function delete(Request $request)
+    {
+        rekeningen::find($request->id)->delete();
+        return redirect('/rekeningen');
     }
 }
