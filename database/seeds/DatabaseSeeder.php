@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Zou je dit willen betalen?',
             'amount' => '100',
             'amountpaid' => 0,
+            'hash' => '123456',
         ]);
         DB::table('rekeningens')->insert([
             'Userid' => '1',

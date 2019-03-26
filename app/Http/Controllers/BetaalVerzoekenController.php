@@ -39,6 +39,7 @@ class BetaalVerzoekenController extends Controller
         $betaalverzoek->amount = request('amount');
         $betaalverzoek->amountpaid = '0';
         $betaalverzoek->Rekeningid = request('rekening');
+        $betaalverzoek->hash = base64_encode(Hash::make($betaalverzoek->id . Config::get('APP_KEY')));
 
         $betaalverzoek->save();
         return redirect('/betaalverzoeken');

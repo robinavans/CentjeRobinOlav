@@ -36,10 +36,11 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
-
-Auth::routes();
+Route::get('/betalen/{hash}, BetalenController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
 
 Route::post('/nieuwverzoek', 'BetaalVerzoekenController@store');
 

@@ -21,6 +21,7 @@ class CreateBetaalverzoekensTable extends Migration
             $table->string('description');
             $table->integer('amount');
             $table->integer('amountpaid');
+            $table->string('hash');
         });
     }
 
