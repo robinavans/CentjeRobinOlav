@@ -29,6 +29,10 @@ Route::get('/contacten', function () {
     return view('contacten');
 });
 
+Route::get('/betalen', function () {
+    return view('betalen');
+});
+
 Route::get('/login', function () {
     return view('login');
 });
