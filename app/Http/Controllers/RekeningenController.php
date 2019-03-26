@@ -25,8 +25,6 @@ class RekeningenController extends Controller
     {
         $request->validate([
             'name' => 'required|max:255',
-            'description' => 'required|max:255',
-            'amount' => 'required',
             'rekeningnummer' => 'required',
         ]);
         $rekening = new rekeningen();
