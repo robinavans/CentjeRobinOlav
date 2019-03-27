@@ -51,3 +51,5 @@ Route::post('/nieuwerekening', 'RekeningenController@store');
 Route::post('/deleterekening', 'RekeningenController@delete');
 
 Route::post('/deleteverzoek', 'BetaalVerzoekenController@delete');
+
+Route::post('/betalen', 'BetalenController@betalen')->middleware('auth');

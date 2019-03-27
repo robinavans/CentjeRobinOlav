@@ -28,6 +28,11 @@
                     <option value={{ $rekening->id }}>{{ $rekening->Name }}</option>
                 @endforeach
             </select>
+            <br><a>In de valuta:</a>
+            <select name="valuta">
+                <option value=Euro>Euro</option>
+                <option value=Dollar>Dollar</option>
+            </select>
         <br><input type="submit" class="btn btn-primary" title="add betaalverzoek">
         </form>
     </div>

@@ -29,6 +29,7 @@ class BetaalVerzoekenController extends Controller
             'description' => 'required|max:255',
             'amount' => 'required',
             'rekening' => 'required',
+            'valuta' => 'required',
         ]);
 
         $betaalverzoek = new betaalverzoeken();
@@ -39,6 +40,7 @@ class BetaalVerzoekenController extends Controller
         $betaalverzoek->amount = request('amount');
         $betaalverzoek->amountpaid = '0';
         $betaalverzoek->Rekeningid = request('rekening');
+        $betaalverzoek->valuta = request('valuta');
 
         $betaalverzoek->save();
         return redirect('/betaalverzoeken');
