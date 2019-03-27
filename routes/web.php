@@ -36,9 +36,11 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
-Route::get('/betalen/{hash}, BetalenController@index');
+Route::get('/betalen/{id}', 'BetalenController@index')->middleware('auth');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/callback', 'BetaalVerzoekenController@index');
 
 Auth::routes();
 

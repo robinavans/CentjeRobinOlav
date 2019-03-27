@@ -17,6 +17,7 @@
             <th>Naam</th>
             <th>Omschrijving</th>
             <th>Bedrag</th>
+            <th>Link om te delen</th>
         </tr>
 
         @foreach($verzoeken as $verzoek)
@@ -31,7 +32,7 @@
                     <a>{{ $verzoek->amount }} </a> <br>
             </td>
             <td>
-                <button>Betaalverzoek delen</button>
+                <a>{{'http://centje.localhost/betalen/'. $verzoek->id}}</a>
             </td>
             @if($verzoek->amountpaid <= 0)
                 <td>

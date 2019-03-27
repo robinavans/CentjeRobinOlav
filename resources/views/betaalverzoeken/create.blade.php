@@ -16,14 +16,14 @@
         <form method="post" action="/nieuwverzoek">
             {{ csrf_field() }}
         <br><a>Naam verzoek:</a>
-        <input type="text" name="name" placeholder="Naam verzoek" data-validate = "Een naam voor het betaalverzoek is verplicht!">
+        <input type="text" name="name" placeholder="Naam verzoek">
         <br><a>Een omschrijving van het verzoek:</a>
-        <input type="text" name="description" placeholder="Omschrijving verzoek" data-validate = "Een omschrijving van het betaalverzoek is verplicht!">
+        <input type="text" name="description" placeholder="Omschrijving verzoek">
         <br><a>Bedrag van het verzoek:</a>
-        <input name="amount" type="number" data-validate = "Het bedrag van het betaalverzoek is verplicht!">
+        <input name="amount" type="number">
             <br><a>Op rekening:</a>
 
-            <select name="rekening" data-validate = "Een rekening is verplicht!">
+            <select name="rekening">
                 @foreach($rekeningen as $rekening)
                     <option value={{ $rekening->id }}>{{ $rekening->Name }}</option>
                 @endforeach
