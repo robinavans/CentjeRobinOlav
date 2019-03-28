@@ -22,6 +22,7 @@ class BetalenController extends Controller
         $verzoek = betaalverzoeken::where('id', '=', $request->id)->first();
         $amount = $verzoek->amount .'.00';
         $betaling = new Betaling();
+        $betaling->save();
         $mollie = new \Mollie\Api\MollieApiClient();
         $mollie->setApiKey("test_vQgKdvQe27VVCasB57VRJjqC99ATVE");
         $payment = $mollie->payments->create([
@@ -31,14 +32,14 @@ class BetalenController extends Controller
             ],
             "method"      => \Mollie\Api\Types\PaymentMethod::IDEAL,
             "description" => $verzoek->description ,
-            "redirectUrl" => "http://centje.localhost/callback/$betaling->id",
+            "redirectUrl" => "http://centje.localhost/callback/". $betaling->id,
             "webhookUrl"  => "https://example.org/webhook.php",
         ]);
         $betaling->Verzoekid = $verzoek->id;
         $betaling->Paymentstatus = $payment->status;
         $betaling->Paymentid = $payment->id;
         $betaling->Notities = $request->note;
-        $betaling->save();
+        $betaling->save();;
         echo '<script>window.location = "'.$payment->getCheckoutUrl().'";</script>';
     }
 
@@ -47,8 +48,9 @@ class BetalenController extends Controller
         $mollie = new \Mollie\Api\MollieApiClient();
         $mollie->setApiKey("test_vQgKdvQe27VVCasB57VRJjqC99ATVE");
         $betaling = Betaling::find($id);
-        $payment= $mollie->payments::find($betaling->Paymentid);
+        $payment= $mollie->payments->get($betaling->Paymentid);
         $betaling->Paymentstatus = $payment->status;
         $betaling->save();
+        return redirect('/betaalverzoeken');
     }
 }
