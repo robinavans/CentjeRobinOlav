@@ -4,19 +4,19 @@
 
     <div class="content">
 
-        <button class="button" onclick="window.location.href = '/createrekening';">Nieuwe Rekening toevoegen</button>
+        <button class="button" onclick="window.location.href = '/createrekening';">{{ __('rekeningen.Nieuw') }}</button>
 
         @if(count($rekeningen) <= 0)
             <div>
-                <a>Je hebt nog geen rekening gemaakt!</a>
+                <a>{{ __('rekeningen.Leeg') }}</a>
             </div>
 
         @else
             <table>
                 <tr>
-                    <th>Naam</th>
-                    <th>Rekeningnummer</th>
-                    <th>Vermogen</th>
+                    <th>{{ __('rekeningen.Naam') }}</th>
+                    <th>{{ __('rekeningen.Rekeningnummer') }}</th>
+                    <th>{{ __('rekeningen.Vermogen') }}</th>
                 </tr>
 
                 @foreach($rekeningen as $rekening)
@@ -35,7 +35,7 @@
                                 {{ csrf_field() }}
                                 <input type="hidden" name="id" value="{{ $rekening->id }}">
                             <button type="submit" class="btn btn-danger">
-                                Verwijder rekening
+                                {{ __('rekeningen.Verwijderen') }}
                             </button>
                             </form>
                         </td>

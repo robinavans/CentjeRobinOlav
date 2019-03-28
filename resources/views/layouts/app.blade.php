@@ -38,17 +38,17 @@
                             <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/betaalverzoeken">Betaalverzoeken</a>
+                            <a class="nav-link" href="/betaalverzoeken/{lang?}">{{ __('nav.Betaalverzoeken') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/rekeningen">Rekeningen</a>
+                            <a class="nav-link" href="/rekeningen/{lang?}">{{ __('nav.Rekeningen') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contacten">Contacten</a>
+                            <a class="nav-link" href="/contacten/{lang?}">{{ __('nav.Contacten') }}</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/kalender">Kalender</a>
+                            <a class="nav-link" href="/kalender/{lang?}">{{ __('nav.Kalender') }}</a>
                         </li>
 
                     </ul>

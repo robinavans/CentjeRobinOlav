@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use App\rekeningen;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 
 class RekeningenController extends Controller
 {
 
-    public function index()
+    public function index($lang = null)
     {
+        App::setlocale($lang);
         $rekeningen = rekeningen::where('Userid', '=', Auth::user()->getAuthIdentifier())->get();
 
         return view("Rekeningen.Rekeningen", ['rekeningen' => $rekeningen]);
