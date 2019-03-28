@@ -51,6 +51,12 @@ class BetalenController extends Controller
         $payment= $mollie->payments->get($betaling->Paymentid);
         $betaling->Paymentstatus = $payment->status;
         $betaling->save();
+        if($payment->isPaid())
+        {
+            $verzoek = betaalverzoeken::find($betaling->Verzoekid);
+            $verzoek->amountpaid = $verzoek->amountpaid +1;
+            $verzoek->save();
+        }
         return redirect('/betaalverzoeken');
     }
 }
