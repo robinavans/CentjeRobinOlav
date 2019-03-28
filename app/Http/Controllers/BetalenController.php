@@ -6,12 +6,17 @@ use App\User;
 use Illuminate\Http\Request;
 use App\betaalverzoeken;
 use App\Betaling;
+use Illuminate\Support\Facades\Auth;
 
 class BetalenController extends Controller
 {
     public function index($id)
     {
         $verzoek = betaalverzoeken::where('id', '=', $id)->first();
+        if (Auth::user()->getAuthIdentifier() == $verzoek->Userid)
+        {
+            return redirect('/betaalverzoeken');
+        }
         $user = User::where('id', '=', $verzoek->Userid)->first();
         $data = array('verzoek'=>$verzoek,'user' => $user);
         return view('betalen.betalen', $data);
