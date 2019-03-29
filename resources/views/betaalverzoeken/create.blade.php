@@ -30,8 +30,8 @@
             </select>
             <br><a>In de valuta:</a>
             <select name="valuta">
-                <option value=Euro>Euro</option>
-                <option value=Dollar>Dollar</option>
+                <option value=EUR>Euro</option>
+                <option value=USD>Dollar</option>
             </select>
             <br><a>De datum waarop dit verzoek verloopt</a>
             <input name="verloopdatum" type="date">
