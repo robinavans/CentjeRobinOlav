@@ -10,5 +10,5 @@
         'Leeg' => 'Er zijn nog geen betaalverzoeken',
         'Rekening' => 'Op rekening',
         'Valuta' => 'Valuta',
-        'Verzenden' => 'Verzenden'
+        'Verzenden' => 'Verzenden',
     ];

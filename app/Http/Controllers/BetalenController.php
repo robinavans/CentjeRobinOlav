@@ -6,12 +6,14 @@ use App\User;
 use Illuminate\Http\Request;
 use App\betaalverzoeken;
 use App\Betaling;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 
 class BetalenController extends Controller
 {
-    public function index($id)
+    public function index($id, $lang = null)
     {
+        App::setlocale($lang);
         $verzoek = betaalverzoeken::where('id', '=', $id)->first();
         if (Auth::user()->getAuthIdentifier() == $verzoek->Userid)
         {
@@ -22,8 +24,9 @@ class BetalenController extends Controller
         return view('betalen.betalen', $data);
     }
 
-    public function betalen(Request $request)
+    public function betalen(Request $request, $lang = null)
     {
+        App:setlocale($lang);
         $verzoek = betaalverzoeken::where('id', '=', $request->id)->first();
         $amount = $verzoek->amount .'.00';
         $betaling = new Betaling();
