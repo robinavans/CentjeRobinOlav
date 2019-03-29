@@ -40,7 +40,11 @@ Route::get('/betalen/{id}/{lang?}', 'BetalenController@index')->middleware('auth
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
 Route::get('/callback/{lang?}', 'BetaalVerzoekenController@index');
+
+Route::get('/callback/{id}', 'BetalenController@finish');
+
 
 Auth::routes();
 

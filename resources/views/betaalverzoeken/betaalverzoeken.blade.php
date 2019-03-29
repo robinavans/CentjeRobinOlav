@@ -29,7 +29,7 @@
                     <a>{{ $verzoek->description }}</a>
             </td>
             <td>
-                    <a>{{ $verzoek->amount }} </a> <br>
+                    <a>{{ $verzoek->amount ." ". $verzoek->valuta }} </a> <br>
             </td>
             <td>
                 <a>{{'http://centje.localhost/betalen/'. $verzoek->id}}</a>

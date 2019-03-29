@@ -15,10 +15,10 @@ class CreateBetalingsTable extends Migration
     {
         Schema::create('betalings', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('Verzoekid');
-            $table->string('Paymentstatus');
-            $table->string('Paymentid');
-            $table->string('Notities');
+            $table->integer('Verzoekid')->nullable();
+            $table->string('Paymentstatus')->nullable();
+            $table->string('Paymentid')->nullable();
+            $table->string('Notities')->nullable();
         });
     }
 
