@@ -33,6 +33,8 @@
                 <option value=Euro>Euro</option>
                 <option value=Dollar>Dollar</option>
             </select>
+            <br><a>De datum waarop dit verzoek verloopt</a>
+            <input name="verloopdatum" type="date">
         <br><input type="submit" class="btn btn-primary" title="add betaalverzoek">
         </form>
     </div>

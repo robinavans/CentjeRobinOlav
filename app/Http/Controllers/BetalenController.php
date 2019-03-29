@@ -13,7 +13,7 @@ class BetalenController extends Controller
     public function index($id)
     {
         $verzoek = betaalverzoeken::where('id', '=', $id)->first();
-        if (Auth::user()->getAuthIdentifier() == $verzoek->Userid)
+        if (Auth::user()->getAuthIdentifier() == $verzoek->Userid || $verzoek->verloopdatum < date("Y/m/d"))
         {
             return redirect('/betaalverzoeken');
         }
