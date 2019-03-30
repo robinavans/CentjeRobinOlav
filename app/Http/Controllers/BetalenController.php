@@ -35,16 +35,18 @@ class BetalenController extends Controller
                 "currency" => "EUR",
                 "value" => $amount
             ],
-            "method"      => \Mollie\Api\Types\PaymentMethod::IDEAL,
+            "method"      => \Mollie\Api\Types\PaymentMethod::PAYPAL,
             "description" => $verzoek->description ,
             "redirectUrl" => "http://centje.localhost/callback/". $betaling->id,
             "webhookUrl"  => "https://example.org/webhook.php",
         ]);
         $betaling->Verzoekid = $verzoek->id;
         $betaling->Paymentstatus = $payment->status;
+        $betaling->Personid = Auth::user()->getAuthIdentifier();
         $betaling->Paymentid = $payment->id;
         $betaling->Notities = $request->note;
-        $betaling->save();;
+        $betaling->Datum = $payment->date;
+        $betaling->save();
         echo '<script>window.location = "'.$payment->getCheckoutUrl().'";</script>';
     }
 
