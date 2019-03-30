@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17abed83-79d0-4bdf-8ba7-46f2522acb21" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/js/mijnjavascript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CentjeRobinOlav.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CentjeRobinOlav.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BetalenController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BetalenController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/KalenderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/KalenderController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_27_124926_create_betalings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_27_124926_create_betalings_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kalender/kalender.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kalender/kalender.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,19 +25,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BetalenController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="180">
+              <caret line="26" column="69" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/betaalverzoeken/create.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RekeningenController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="34" column="21" selection-start-line="30" selection-start-column="12" selection-end-line="34" selection-end-column="21" />
+            <state relative-caret-position="183">
+              <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/kalender/kalender.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/KalenderController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+              <folding>
+                <element signature="e#40#57#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/mijnjavascript.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -38,17 +75,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/betalen/betalen.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="323">
+              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BetalenController.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/betaalverzoeken/betaalverzoeken.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="112">
+              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BetaalVerzoekenController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-170">
+              <caret line="13" column="101" selection-start-line="13" selection-start-column="101" selection-end-line="13" selection-end-column="101" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -59,6 +114,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -66,6 +122,7 @@
     <findStrings>
       <find>re</find>
       <find>call</find>
+      <find>foreach</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,10 +172,15 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/betaalverzoeken/betaalverzoeken.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/betalen/betalen.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_27_124926_create_betalings_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/BetalenController.php" />
+        <option value="$PROJECT_DIR$/resources/views/kalender/getData.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/KalenderController.php" />
+        <option value="$PROJECT_DIR$/resources/js/mijnjavascript.js" />
+        <option value="$PROJECT_DIR$/resources/views/kalender/kalender.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/mijnjavascript.js" />
       </list>
     </option>
   </component>
@@ -211,6 +273,7 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -227,6 +290,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,18 +319,24 @@
             <path>
               <item name="CentjeRobinOlav" type="b2602c69:ProjectViewProjectNode" />
               <item name="CentjeRobinOlav" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CentjeRobinOlav" type="b2602c69:ProjectViewProjectNode" />
               <item name="CentjeRobinOlav" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CentjeRobinOlav" type="b2602c69:ProjectViewProjectNode" />
               <item name="CentjeRobinOlav" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CentjeRobinOlav" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CentjeRobinOlav" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CentjeRobinOlav" type="b2602c69:ProjectViewProjectNode" />
@@ -279,7 +349,7 @@
               <item name="CentjeRobinOlav" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="betaalverzoeken" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CentjeRobinOlav" type="b2602c69:ProjectViewProjectNode" />
@@ -288,11 +358,29 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="betalen" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CentjeRobinOlav" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CentjeRobinOlav" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="kalender" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CentjeRobinOlav" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CentjeRobinOlav" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CentjeRobinOlav" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CentjeRobinOlav" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,17 +397,17 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\repositories\centje\CentjeRobinOlav\app\Http\Controllers" />
-      <recent name="D:\repositories\centje\CentjeRobinOlav\resources\views\betalen" />
-      <recent name="D:\repositories\CentjeRobinOlav\resources\views\rekeningen" />
-      <recent name="D:\repositories\CentjeRobinOlav\resources\views\betaalverzoeken" />
-      <recent name="C:\Users\olavj\OneDrive\Documenten\GitHub\CentjeRobinOlav\resources\views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\repositories\centje\CentjeRobinOlav\resources\lang\nl" />
       <recent name="D:\repositories\CentjeRobinOlav\resources\views\rekeningen" />
       <recent name="C:\Users\olavj\OneDrive\Documenten\GitHub\CentjeRobinOlav" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\olavj\OneDrive\Documenten\GitHub\CentjeRobinOlav\public\js" />
+      <recent name="D:\repositories\centje\CentjeRobinOlav\app\Http\Controllers" />
+      <recent name="D:\repositories\centje\CentjeRobinOlav\resources\views\betalen" />
+      <recent name="D:\repositories\CentjeRobinOlav\resources\views\rekeningen" />
+      <recent name="D:\repositories\CentjeRobinOlav\resources\views\betaalverzoeken" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -357,7 +445,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5642000" />
+    <option name="totallyTimeSpent" value="11437000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -370,9 +458,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2260128" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31236672" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -385,7 +472,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32394367" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -429,24 +516,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/betaalverzoeken/betaalverzoeken.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/betaalverzoeken/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="34" column="21" selection-start-line="30" selection-start-column="12" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -457,24 +530,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/betalen/betalen.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_27_124926_create_betalings_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        <state relative-caret-position="306">
+          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_27_124926_create_betalings_table.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="180">
+          <caret line="325" column="63" selection-start-line="325" selection-start-column="63" selection-end-line="325" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BetaalVerzoekenController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="13" column="101" selection-start-line="13" selection-start-column="101" selection-end-line="13" selection-end-column="101" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BetalenController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="180">
+          <caret line="26" column="69" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Betaling.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RekeningenController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/betalen/betalen.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/betaalverzoeken/betaalverzoeken.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="77" selection-start-line="50" selection-start-column="77" selection-end-line="50" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/kalender/getData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/KalenderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/kalender/kalender.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/mijnjavascript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
         </state>
       </provider>
     </entry>

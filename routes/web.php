@@ -19,6 +19,7 @@ Route::get('/rekeningen', 'RekeningenController@index')->middleware('auth');
 Route::get('/createrekening', 'RekeningenController@create')->middleware('auth');
 
 Route::get('/kalender', 'KalenderController@index')->middleware('auth');
+Route::get('/getData','KalenderController@getData');
 
 
 Route::get('/betaalverzoeken', 'BetaalVerzoekenController@index')-> middleware('auth');

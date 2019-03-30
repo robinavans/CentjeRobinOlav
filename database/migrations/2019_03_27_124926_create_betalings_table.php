@@ -21,7 +21,8 @@ class CreateBetalingsTable extends Migration
             $table->string('Paymentstatus')->nullable();
             $table->string('Paymentid')->nullable();
             $table->string('Notities')->nullable();
-            $table->date('Datum')->nullable();        });
+            $table->date('Datum')->nullable();
+        });
     }
 
     /**
