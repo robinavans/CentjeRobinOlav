@@ -38,15 +38,6 @@
             <td>
                 <a>{{ $verzoek->verloopdatum }}</a>
             </td>
-            <td>
-                <form method="get" action="/mail">
-                    {{ csrf_field() }}
-                    <input type="hidden" name="link" value="{{'http://centje.localhost/betalen/'. $verzoek->id}}">
-                    <button type="submit">
-                        stuur link
-                    </button>
-                </form>
-            </td>
             @if($verzoek->amountpaid <= 0)
                 <td>
                     <form method="post" action="/deleteverzoek">
