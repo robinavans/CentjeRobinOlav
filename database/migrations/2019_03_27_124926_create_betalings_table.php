@@ -14,7 +14,7 @@ class CreateBetalingsTable extends Migration
     public function up()
     {
         Schema::create('betalings', function (Blueprint $table) {
-          
+
             $table->bigIncrements('id');
             $table->integer('Verzoekid')->nullable();
             $table->integer('Personid')->nullable();
