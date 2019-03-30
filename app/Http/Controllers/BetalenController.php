@@ -13,7 +13,7 @@ class BetalenController extends Controller
     public function index($id)
     {
         $verzoek = betaalverzoeken::where('id', '=', $id)->first();
-        if (Auth::user()->getAuthIdentifier() == $verzoek->Userid)
+        if (Auth::user()->getAuthIdentifier() == $verzoek->Userid || new \DateTime($verzoek->verloopdatum) < new \DateTime('now'))
         {
             return redirect('/betaalverzoeken');
         }
@@ -32,16 +32,17 @@ class BetalenController extends Controller
         $mollie->setApiKey("test_vQgKdvQe27VVCasB57VRJjqC99ATVE");
         $payment = $mollie->payments->create([
             "amount" => [
-                "currency" => "EUR",
+                "currency" => $request->valuta,
                 "value" => $amount
             ],
-            "method"      => \Mollie\Api\Types\PaymentMethod::IDEAL,
+            "method"      => \Mollie\Api\Types\PaymentMethod::PAYPAL,
             "description" => $verzoek->description ,
             "redirectUrl" => "http://centje.localhost/callback/". $betaling->id,
             "webhookUrl"  => "https://example.org/webhook.php",
         ]);
         $betaling->Verzoekid = $verzoek->id;
         $betaling->Paymentstatus = $payment->status;
+        $betaling->Personid = Auth::user()->getAuthIdentifier();
         $betaling->Paymentid = $payment->id;
         $betaling->Notities = $request->note;
         $betaling->save();;
