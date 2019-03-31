@@ -1,7 +1,5 @@
 function getData()
 {
-    public function getData()
-{
     $.ajax({
         method: 'get',
         url: '/getData',
@@ -14,7 +12,6 @@ function getData()
             });
         }
     });
-}
         // Response is nu een array van sentjes in javascript
         // Hieronder kun je de kalender aanpassen via javascript
 }
