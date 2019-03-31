@@ -15,7 +15,7 @@ class KalenderController extends Controller
         return view('kalender.kalender');
     }
     public function getData() {
-        $sentjes = betaling::where('PersonID', '=', Auth::user()->getAuthIdentifier())->get();
+        $sentjes = betaling::where('Personid', '=', Auth::user()->getAuthIdentifier())->get();
         response()->json($sentjes);
         return response()->json($sentjes);
     }
