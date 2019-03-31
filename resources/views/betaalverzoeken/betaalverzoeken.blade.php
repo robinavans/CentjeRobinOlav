@@ -4,20 +4,20 @@
 
     <div class="content">
 
-        <button class="button" onclick="window.location.href = '/nieuwverzoek';">Nieuw betaalverzoek</button>
+        <button class="button" onclick="window.location.href = '/nieuwverzoek';">{{ __('betaalverzoeken.Nieuw') }}</button>
 
     @if(count($verzoeken) <= 0)
         <div>
-            <a>Je hebt nog geen betaalverzoeken</a>
+            <a>{{ __('betaalverzoeken.Leeg') }}</a>
         </div>
 
     @else
     <table>
         <tr>
-            <th>Naam</th>
-            <th>Omschrijving</th>
-            <th>Bedrag</th>
-            <th>Link om te delen</th>
+            <th>{{ __('betaalverzoeken.Naam') }}</th>
+            <th>{{ __('betaalverzoeken.Omschrijving') }}</th>
+            <th>{{ __('betaalverzoeken.Bedrag') }}</th>
+            <th>{{ __('betaalverzoeken.Link') }}</th>
             <th>Verloopdatum</th>
         </tr>
 
@@ -44,7 +44,7 @@
                         {{ csrf_field() }}
                         <input type="hidden" name="id" value="{{ $verzoek->id }}">
                         <button type="submit" class="btn btn-danger">
-                            Verwijder verzoek
+                            {{ __('betaalverzoeken.Verwijderen') }}
                         </button>
                     </form>
                 </td>

@@ -5,19 +5,22 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\betaalverzoeken;
 use App\rekeningen;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 
 class BetaalVerzoekenController extends Controller
 {
-    public function index()
+    public function index($lang = null)
     {
+        App::setLocale($lang);
         $verzoeken = betaalverzoeken::where('Userid', '=', Auth::user()->getAuthIdentifier())->get();
 
         return view('betaalverzoeken.betaalverzoeken', ['verzoeken' => $verzoeken]);
     }
 
-    public function create()
+    public function create($lang = null)
     {
+        App::setLocale($lang);
         $rekeningen = rekeningen::where('Userid', '=', Auth::user()->getAuthIdentifier())->get();
         return view('betaalverzoeken.create', ['rekeningen' => $rekeningen]);
     }

@@ -4,12 +4,12 @@
 @section('content')
 
     <div class="content">
-        <a>Jouw contactcode is: {{ $user->contactcode }}</a>
-        <br><button class="button" onclick="window.location.href = '/nieuwcontact';">Nieuw contact</button>
+        <a>{{ __('contacten.Contactcode') }} {{ $user->contactcode }}</a>
+        <br><button class="button" onclick="window.location.href = '/nieuwcontact';">{{ __('contacten.Nieuw') }}</button>
 
         <table>
             <tr>
-                <th>Naam</th>
+                <th>{{ __('contacten.Naam') }}</th>
             </tr>
 
             @foreach($contacten as $contact)

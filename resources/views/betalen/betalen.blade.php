@@ -3,25 +3,27 @@
     <div class="content">
     <form method="post" action="/betalen">
         {{ csrf_field() }}
-        <br><a>Verzoek van: {{$user->name}}</a>
-        <br><a>Naam verzoek:</a>
+        <br><a>{{  __('betalingen.Van') }}: {{$user->name}}</a>
+        <br><a>{{  __('betalingen.Naam') }}:</a>
         <a>{{$verzoek->name}}</a>
-        <br><a>De omschrijving van het verzoek:</a>
+        <br><a>{{  __('betalingen.Omschrijving') }}:</a>
         <a>{{$verzoek->description}}</a>
-        <br><a>Tijdstip:</a>
+        <br><a>{{  __('betalingen.Tijdstip') }}:</a>
         <a>{{$verzoek->created_at}}</a>
-        <br><a>Bedrag van het verzoek:</a>
+        <br><a>{{  __('betalingen.Bedrag') }}:</a>
         <a>{{$verzoek->amount}}</a>
-        <br><a>De valuta van het verzoek:</a>
+        <br><a>{{  __('betalingen.Valuta') }}:</a>
         <a>{{$verzoek->valuta}}</a>
-        <input type="hidden" name="valuta" value="{{ $verzoek->valuta }}">
-        <br><a>Notitie(optioneel)</a>
-        <input type="text" name="note" placeholder="notitie">
-        <br><a>Datum(optioneel)</a>
-        <input type="date" name="date" placeholder="datum">
-        <br><a>Op rekening:</a>
+        <br><a>{{  __('betalingen.ValutaBetalen') }}:</a>
+        <select name="valuta">
+            <option value=EUR>Euro</option>
+            <option value=USD>Dollar</option>
+        </select>
+        <br><a>{{  __('betalingen.Notitie') }}:</a>
+        <input type="text" name="note" placeholder="{{ __('betalingen.Notitie') }}">
+        <br><a>{{  __('betalingen.Rekening') }}:</a>
         <input type="hidden" name="id" value={{ $verzoek->id }}>
-        <button type="submit">Naar Paypal gaan</button>
+        <button type="submit">{{ __('betalingen.Ideal') }}</button>
     </form>
     </div>
 @endsection

@@ -15,9 +15,9 @@
         @endif
         <form method="post" action="/nieuwcontact">
             {{ csrf_field() }}
-            <a>Contactcode: </a><input type="text" name="contactcode" placeholder="contactcode">
-            <br><a>Naam contact: </a><input type="text" name="contactname">
-        <br><button class="btn btn-primary" onclick="window.location.href = '/nieuwcontact';">Contact toevoegen</button>
+            <a>{{ __('contacten.Contactcode') }} </a><input type="text" name="contactcode" placeholder="contactcode">
+            <br><a>{{ __('contacten.Naam') }} </a><input type="text" name="contactname">
+        <br><button class="btn btn-primary"  onclick="window.location.href = '/nieuwcontact';">{{ __('contacten.Add') }}</button>
 
         </form>
     </div>
