@@ -30,7 +30,7 @@ class BetaalVerzoekenController extends Controller
         $request->validate([
             'name' => 'required|max:255',
             'description' => 'required|max:255',
-            'amount' => 'required',
+            'amount' => 'required|digits_between:1,10|numeric',
             'rekening' => 'required',
             'valuta' => 'required',
             'verloopdatum'=> 'required|after:today',
