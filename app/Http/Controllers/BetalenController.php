@@ -20,6 +20,9 @@ class BetalenController extends Controller
                 return redirect('/betaalverzoeken');
             }
         }
+        if($verzoek == null){
+            return redirect('/betaalverzoeken');
+        }
         $user = User::where('id', '=', $verzoek->Userid)->first();
         $data = array('verzoek'=>$verzoek,'user' => $user);
         return view('betalen.betalen', $data);
