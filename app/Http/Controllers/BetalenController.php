@@ -51,6 +51,9 @@ class BetalenController extends Controller
         ]);
         $betaling->Verzoekid = $verzoek->id;
         $betaling->Paymentstatus = $payment->status;
+        if(!Auth::guest()){
+            $betaling->Personid = Auth::user()->getAuthIdentifier();
+        }
         $betaling->Paymentid = $payment->id;
         $betaling->Notities = $request->note;
         $betaling->Datum = $request->date;
