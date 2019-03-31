@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17abed83-79d0-4bdf-8ba7-46f2522acb21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/betalingen.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/nl/betalingen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BetalenController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BetalenController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/nl/betaalverzoeken.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/nl/betaalverzoeken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/betalen/betalen.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/betalen/betalen.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="17abed83-79d0-4bdf-8ba7-46f2522acb21" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/betalen/betalen.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="77" />
+            <state relative-caret-position="391">
+              <caret line="23" column="9" selection-start-line="22" selection-start-column="8" selection-end-line="23" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -461,7 +454,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76838000" />
+    <option name="totallyTimeSpent" value="77605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -474,7 +467,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30916846" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -811,8 +803,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/betalen/betalen.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="77" />
+        <state relative-caret-position="391">
+          <caret line="23" column="9" selection-start-line="22" selection-start-column="8" selection-end-line="23" selection-end-column="9" />
         </state>
       </provider>
     </entry>
