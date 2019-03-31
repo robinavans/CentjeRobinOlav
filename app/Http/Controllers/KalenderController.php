@@ -4,33 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Betaling;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 
 class KalenderController extends Controller
 {
-    public function index()
+    public function index($lang = null)
     {
-
-//
-//        $events = [];
-//        $events[] = \Calendar::event(
-//            "Event One",
-//            true,
-//            '2019-01-02t0900',
-//            '2019-01-06t0800',
-//            0
-//        );
-//
-//
-//
-//
-//        $calendar = \Calendar::addEvents($events)
-//            ->setOptions([
-//                'firstDay' => 1
-//            ])->setCallbacks([
-//
-//            ]);
-
+        App::setlocale($lang);
         return view('kalender.kalender');
     }
     public function getData() {
