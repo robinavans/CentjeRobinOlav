@@ -6,7 +6,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/locale-all.js"></script>
     <script src='/js/mijnjavascript.js'></script>
-<script>
+
+    <script>
     $( document ).ready(function() {
         $('#calendar').fullCalendar({
             locale: '{{ App::getLocale() }}'
