@@ -17,6 +17,8 @@
         <input type="hidden" name="valuta" value="{{ $verzoek->valuta }}">
         <br><a>Notitie(optioneel)</a>
         <input type="text" name="note" placeholder="notitie">
+        <br><a>Datum(optioneel)</a>
+        <input type="date" name="date" placeholder="datum">
         <br><a>Op rekening:</a>
         <input type="hidden" name="id" value={{ $verzoek->id }}>
         <button type="submit">Naar Ideal gaan</button>

@@ -45,7 +45,8 @@ class BetalenController extends Controller
         $betaling->Personid = Auth::user()->getAuthIdentifier();
         $betaling->Paymentid = $payment->id;
         $betaling->Notities = $request->note;
-        $betaling->save();;
+        $betaling->Datum = $request->date;
+        $betaling->save();
         echo '<script>window.location = "'.$payment->getCheckoutUrl().'";</script>';
     }
 
