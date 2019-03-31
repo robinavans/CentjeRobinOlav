@@ -5,7 +5,7 @@
         'Omschrijving' => 'Omschrijving',
         'Bedrag' => 'Bedrag',
         'Link' => 'Link',
-        'Verwijder' => 'Verwijder betaalverzoek',
+        'Verwijderen' => 'Verwijder betaalverzoek',
         'Nieuw' => 'Nieuw betaalverzoek',
         'Leeg' => 'Er zijn nog geen betaalverzoeken',
         'Rekening' => 'Op rekening',
