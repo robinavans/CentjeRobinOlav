@@ -35,7 +35,7 @@ class BetalenController extends Controller
         $mollie->setApiKey("test_vQgKdvQe27VVCasB57VRJjqC99ATVE");
         $payment = $mollie->payments->create([
             "amount" => [
-                "currency" => $request->valuta,
+                "currency" => $verzoek->valuta,
                 "value" => $amount
             ],
             "method"      => \Mollie\Api\Types\PaymentMethod::PAYPAL,
@@ -68,4 +68,5 @@ class BetalenController extends Controller
         }
         return redirect('/betaalverzoeken');
     }
+
 }

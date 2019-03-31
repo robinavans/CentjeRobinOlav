@@ -6,7 +6,7 @@
         'Tijdstip' => 'Tijdstip',
         'Bedrag' => 'Bedrag van het verzoek',
         'Valuta' => 'De valuta van het verzoek',
-        'ValutaBetalen' => 'Je gaat betalen in de valuta',
+        'datum' => 'Datum(optioneel)',
         'Notitie' => 'Notitie(optioneel)',
         'Rekening' => 'Op rekening',
         'Ideal' => 'Naar Paypal gaan',

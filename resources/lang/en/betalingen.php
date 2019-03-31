@@ -6,7 +6,7 @@
         'Tijdstip' => 'Time',
         'Bedrag' => 'Amount',
         'Valuta' => 'The currencie of the request',
-        'ValutaBetalen' => 'The payment currencie',
+        'datum' => 'Date (optional)',
         'Notitie' => 'Note(optional)',
         'Rekening' => 'On account',
         'Ideal' => 'Go to Paypal',

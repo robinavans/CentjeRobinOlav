@@ -14,11 +14,8 @@
         <a>{{$verzoek->amount}}</a>
         <br><a>{{  __('betalingen.Valuta') }}:</a>
         <a>{{$verzoek->valuta}}</a>
-        <br><a>{{  __('betalingen.ValutaBetalen') }}:</a>
-        <select name="valuta">
-            <option value=EUR>Euro</option>
-            <option value=USD>Dollar</option>
-        </select>
+        <br><a>{{  __('betalingen.datum') }}</a>
+        <input type="date" name="date" placeholder="datum">
         <br><a>{{  __('betalingen.Notitie') }}:</a>
         <input type="text" name="note" placeholder="{{ __('betalingen.Notitie') }}">
         <br><a>{{  __('betalingen.Rekening') }}:</a>

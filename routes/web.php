@@ -35,12 +35,12 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
-Route::get('/betalen/{id}/{lang?}', 'BetalenController@index')->middleware('auth');
+Route::get('/betalen/{id}/{lang?}', 'BetalenController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('/callback/{lang?}', 'BetaalVerzoekenController@index');
+Route::get('/callback/{lang?}', 'BetalenController@finish');
 
 
 Auth::routes();
