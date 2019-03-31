@@ -16,17 +16,17 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/betaalverzoeken">Betaalverzoeken</a>
+                        <a class="nav-link" href="/betaalverzoeken">{{  __('nav.Betaalverzoeken') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/rekeningen">Rekeningen</a>
+                        <a class="nav-link" href="/rekeningen">{{  __('nav.Rekeningen') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contacten">Contacten</a>
+                        <a class="nav-link" href="/contacten">{{  __('nav.Contacten') }}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/kalender">Kalender</a>
+                        <a class="nav-link" href="/kalender">{{  __('nav.Kalender') }}</a>
                     </li>
 
                 </ul>
