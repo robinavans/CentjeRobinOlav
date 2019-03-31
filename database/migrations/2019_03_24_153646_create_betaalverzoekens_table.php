@@ -22,6 +22,7 @@ class CreateBetaalverzoekensTable extends Migration
             $table->integer('amount');
             $table->integer('amountpaid');
             $table->string('valuta');
+            $table->date('verloopdatum');
             $table->timestamps();
         });
     }

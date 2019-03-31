@@ -14,11 +14,7 @@
         <a>{{$verzoek->amount}}</a>
         <br><a>De valuta van het verzoek:</a>
         <a>{{$verzoek->valuta}}</a>
-        <br><a>Je gaat betalen in de valuta:</a>
-        <select name="valuta">
-            <option value=EUR>Euro</option>
-            <option value=USD>Dollar</option>
-        </select>
+        <input type="hidden" name="valuta" value="{{ $verzoek->valuta }}">
         <br><a>Notitie(optioneel)</a>
         <input type="text" name="note" placeholder="notitie">
         <br><a>Datum(optioneel)</a>
