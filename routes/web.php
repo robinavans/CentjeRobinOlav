@@ -18,7 +18,7 @@ Route::get('/', function () {
 Route::get('/rekeningen', 'RekeningenController@index')->middleware('auth');
 Route::get('/createrekening', 'RekeningenController@create')->middleware('auth');
 
-Route::get('/kalender', 'KalenderController@index')->middleware('auth');
+Route::get('/kalender', 'KalenderController@index');
 Route::get('/getData','KalenderController@getData');
 
 

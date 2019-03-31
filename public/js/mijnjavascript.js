@@ -11,12 +11,25 @@ function getData()
                     start: response[i].Datum,
                     allDay: true
                 });
-            }
+            }},
 
 
-            // Response is nu een array van sentjes in javascript
-            // Hieronder kun je de kalender aanpassen via javascript
-
+        // Response is nu een array van sentjes in javascript
+        // Hieronder kun je de kalender aanpassen via javascript
+        error: function (response) {
+            alert(response);
         }
     });
+
+    $.ajax({
+        method: 'post',
+        url: '/sentjes/createbankaccount',
+        data: data,
+        success: function (response) {
+            document.location.href = '/sentjes';
+        },
+        error: function (response) {
+            $('#error').text(response.responseText);
+        }
+    })
 }
