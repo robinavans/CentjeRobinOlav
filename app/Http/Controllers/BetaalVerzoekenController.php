@@ -33,6 +33,7 @@ class BetaalVerzoekenController extends Controller
             'amount' => 'required',
             'rekening' => 'required',
             'valuta' => 'required',
+            'verloopdatum'=> 'required|after:today',
         ]);
 
         $betaalverzoek = new betaalverzoeken();
@@ -44,6 +45,7 @@ class BetaalVerzoekenController extends Controller
         $betaalverzoek->amountpaid = '0';
         $betaalverzoek->Rekeningid = request('rekening');
         $betaalverzoek->valuta = request('valuta');
+        $betaalverzoek->verloopdatum = request('verloopdatum');
 
         $betaalverzoek->save();
         return redirect('/betaalverzoeken');

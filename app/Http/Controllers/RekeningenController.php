@@ -6,6 +6,7 @@ use App\rekeningen;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class RekeningenController extends Controller
 {
@@ -33,7 +34,7 @@ class RekeningenController extends Controller
 
         $rekening->Userid = Auth::user()->getAuthIdentifier();
         $rekening->name = request('name');
-        $rekening->rekeningnummer = request('rekeningnummer');
+        $rekening->rekeningnummer = Hash::make(request('rekeningnummer'));
         $rekening->vermogen = '0';
 
         $rekening->save();

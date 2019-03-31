@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@extends('layouts.nav-bar')
 
 @section('content')
 
@@ -30,10 +31,12 @@
             </select>
             <br><a>{{ __('betaalverzoeken.Valuta') }}</a>
             <select name="valuta">
-                <option value=Euro>Euro</option>
-                <option value=Dollar>Dollar</option>
+                <option value=EUR>Euro</option>
+                <option value=USD>Dollar</option>
             </select>
-        <br><input type="submit" class="btn btn-primary" value="{{ __('betaalverzoeken.Verzenden') }}" title="add betaalverzoek">
+            <br><a>De datum waarop dit verzoek verloopt</a>
+            <input name="verloopdatum" type="date">
+            <br><input type="submit" class="btn btn-primary" value="{{ __('betaalverzoeken.Verzenden') }}" title="add betaalverzoek">
         </form>
     </div>
 

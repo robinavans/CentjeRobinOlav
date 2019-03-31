@@ -12,22 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::get('/rekeningen/{lang?}', 'RekeningenController@index')->middleware('auth');
 Route::get('/createrekening/{lang?}', 'RekeningenController@create')->middleware('auth');
 
-Route::get('/kalender', function () {
-    return view('kalender');
-});
+Route::get('/kalender', 'KalenderController@index')->middleware('auth');
+Route::get('/getData','KalenderController@getData');
+
 
 Route::get('/betaalverzoeken/{lang?}', 'BetaalVerzoekenController@index')-> middleware('auth');
 Route::get('/nieuwverzoek/{lang?}', 'BetaalVerzoekenController@create')-> middleware('auth');
 
-Route::get('/contacten/{lang?}', function () {
-    return view('contacten');
-});
+Route::get('/contacten', 'ContactenController@index')->middleware('auth');
+Route::get('/nieuwcontact', 'ContactenController@create')->middleware('auth');
 
 Route::get('/login', function () {
     return view('login');
@@ -52,8 +51,10 @@ Route::post('/nieuwverzoek', 'BetaalVerzoekenController@store');
 
 Route::post('/nieuwerekening', 'RekeningenController@store');
 
+Route::post('/nieuwcontact', 'ContactenController@store');
+
 Route::post('/deleterekening', 'RekeningenController@delete');
 
 Route::post('/deleteverzoek', 'BetaalVerzoekenController@delete');
 
-Route::post('/betalen', 'BetalenController@betalen')->middleware('auth');
+Route::post('/betalen', 'BetalenController@betalen');

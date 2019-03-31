@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@extends('layouts.nav-bar')
 
 @section('content')
 
@@ -23,9 +24,6 @@
                     <tr class="col-md-4">
                         <td>
                             <a>{{ $rekening->Name }}</a>
-                        </td>
-                        <td>
-                            <a>{{ $rekening->rekeningnummer }}</a>
                         </td>
                         <td>
                             <a>{{ $rekening->vermogen }}</a> <br>
