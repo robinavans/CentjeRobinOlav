@@ -19,7 +19,6 @@
             <th>{{ __('betaalverzoeken.Bedrag') }}</th>
             <th>{{ __('betaalverzoeken.Link') }}</th>
             <th>Verloopdatum</th>
-
         </tr>
 
         @foreach($verzoeken as $verzoek)

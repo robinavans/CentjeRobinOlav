@@ -16,7 +16,6 @@
             <table>
                 <tr>
                     <th>{{ __('rekeningen.Naam') }}</th>
-                    <th>{{ __('rekeningen.Rekeningnummer') }}</th>
                     <th>{{ __('rekeningen.Vermogen') }}</th>
                 </tr>
 

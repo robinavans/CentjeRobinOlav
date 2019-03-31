@@ -94,6 +94,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
       <path value="$PROJECT_DIR$/vendor/weglot/weglot-php" />
+
       <path value="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar" />
     </include_path>
   </component>
