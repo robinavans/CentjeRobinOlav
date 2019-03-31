@@ -9,6 +9,6 @@
         'ValutaBetalen' => 'The payment currencie',
         'Notitie' => 'Note(optional)',
         'Rekening' => 'On account',
-        'Ideal' => 'Go to IDEAL',
+        'Ideal' => 'Go to Paypal',
 
     ];

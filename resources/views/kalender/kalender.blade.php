@@ -8,22 +8,12 @@
     <script src='/js/mijnjavascript.js'></script>
 <script>
     $( document ).ready(function() {
-        @if(Request::url()!=='/kalender')
         $('#calendar').fullCalendar({
-            locale: 'nl',
-            height:1000
-        });
-            @else{
-            $('#calendar').fullCalendar({
-                locale:'en',
-                height:1000,
-            })
-        }
-        @endif
-
-
-
+            locale: '{{ App::getLocale() }}'
+        })
     });
+
+
 </script>
 @endsection
 @section('style')

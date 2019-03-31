@@ -4,13 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Betaling;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 
 class KalenderController extends Controller
 {
-    public function index()
+    public function index($lang = null)
     {
-
+        App::setlocale($lang);
         return view('kalender.kalender');
     }
     public function getData() {

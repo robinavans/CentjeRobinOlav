@@ -18,8 +18,8 @@ Route::get('/', function () {
 Route::get('/rekeningen/{lang?}', 'RekeningenController@index')->middleware('auth');
 Route::get('/createrekening/{lang?}', 'RekeningenController@create')->middleware('auth');
 
-Route::get('/kalender', 'KalenderController@index');
-Route::get('/getData','KalenderController@getData');
+Route::get('/kalender/{lang?}', 'KalenderController@index');
+Route::get('/getData/{lang?}','KalenderController@getData');
 
 
 Route::get('/betaalverzoeken/{lang?}', 'BetaalVerzoekenController@index')-> middleware('auth');

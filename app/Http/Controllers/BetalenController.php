@@ -25,9 +25,8 @@ class BetalenController extends Controller
         return view('betalen.betalen', $data);
     }
 
-    public function betalen(Request $request, $lang = null)
+    public function betalen(Request $request)
     {
-        App:setlocale($lang);
         $verzoek = betaalverzoeken::where('id', '=', $request->id)->first();
         $amount = $verzoek->amount .'.00';
         $betaling = new Betaling();
