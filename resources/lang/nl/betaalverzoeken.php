@@ -11,4 +11,5 @@
         'Rekening' => 'Op rekening',
         'Valuta' => 'Valuta',
         'Verzenden' => 'Verzenden',
+        'Verloopdatum' => 'Verloopdatum'
     ];

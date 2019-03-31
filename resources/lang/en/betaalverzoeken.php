@@ -10,6 +10,8 @@
         'Leeg' => 'There are no pay requests',
         'Rekening' => 'On account',
         'Valuta' => 'Currencie',
-        'Verzenden' => 'Send'
+        'Verzenden' => 'Send',
+        'Verloopdatum' => 'Expiration date'
+
 
     ];
