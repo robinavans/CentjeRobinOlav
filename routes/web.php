@@ -25,9 +25,8 @@ Route::get('/kalender', function () {
 Route::get('/betaalverzoeken', 'BetaalVerzoekenController@index')-> middleware('auth');
 Route::get('/nieuwverzoek', 'BetaalVerzoekenController@create')-> middleware('auth');
 
-Route::get('/contacten', function () {
-    return view('contacten');
-});
+Route::get('/contacten', 'ContactenController@index')->middleware('auth');
+Route::get('/nieuwcontact', 'ContactenController@create')->middleware('auth');
 
 Route::get('/login', function () {
     return view('login');
@@ -42,11 +41,15 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/callback/{id}', 'BetalenController@finish');
 
+Route::get('/callback/{id}', 'BetalenController@finish');
+
 Auth::routes();
 
 Route::post('/nieuwverzoek', 'BetaalVerzoekenController@store');
 
 Route::post('/nieuwerekening', 'RekeningenController@store');
+
+Route::post('/nieuwcontact', 'ContactenController@store');
 
 Route::post('/deleterekening', 'RekeningenController@delete');
 
