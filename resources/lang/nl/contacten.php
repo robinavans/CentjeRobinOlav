@@ -1,8 +1,9 @@
 <?php
     return[
-        'Naam' => '',
-        'Contactcode' => 'Jouw contactcode is',
+        'Naam' => 'Naam',
+        'Contactcode' => 'Contactcode',
         'Nieuw' => 'Nieuw contact',
+        'Add' => 'Contact toevoegen'
 
 
     ];

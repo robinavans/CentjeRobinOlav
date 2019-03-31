@@ -25,8 +25,8 @@ Route::get('/getData','KalenderController@getData');
 Route::get('/betaalverzoeken/{lang?}', 'BetaalVerzoekenController@index')-> middleware('auth');
 Route::get('/nieuwverzoek/{lang?}', 'BetaalVerzoekenController@create')-> middleware('auth');
 
-Route::get('/contacten', 'ContactenController@index')->middleware('auth');
-Route::get('/nieuwcontact', 'ContactenController@create')->middleware('auth');
+Route::get('/contacten/{lang?}', 'ContactenController@index')->middleware('auth');
+Route::get('/nieuwcontact/{lang?}', 'ContactenController@create')->middleware('auth');
 
 Route::get('/login', function () {
     return view('login');
