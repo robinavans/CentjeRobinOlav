@@ -31,7 +31,7 @@ class BetalenController extends Controller
     public function betalen(Request $request)
     {
         $request->validate([
-            'date'=> 'after:today',
+            'date'=> 'nullable|after:today',
             ]);
         $verzoek = betaalverzoeken::where('id', '=', $request->id)->first();
         $amount = $verzoek->amount .'.00';
