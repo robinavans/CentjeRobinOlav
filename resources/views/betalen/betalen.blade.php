@@ -21,7 +21,7 @@
         <input type="date" name="date" placeholder="datum">
         <br><a>Op rekening:</a>
         <input type="hidden" name="id" value={{ $verzoek->id }}>
-        <button type="submit">Naar Ideal gaan</button>
+        <button type="submit">Naar Paypal gaan</button>
     </form>
     </div>
 @endsection

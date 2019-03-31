@@ -35,7 +35,7 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
-Route::get('/betalen/{id}', 'BetalenController@index')->middleware('auth');
+Route::get('/betalen/{id}', 'BetalenController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -55,4 +55,4 @@ Route::post('/deleterekening', 'RekeningenController@delete');
 
 Route::post('/deleteverzoek', 'BetaalVerzoekenController@delete');
 
-Route::post('/betalen', 'BetalenController@betalen')->middleware('auth');
+Route::post('/betalen', 'BetalenController@betalen');

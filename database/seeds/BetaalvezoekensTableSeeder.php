@@ -32,7 +32,7 @@ class BetaalvezoekensTableSeeder extends Seeder
             'amount' => '15',
             'amountpaid' => 0,
             'valuta' => 'EUR',
-            'verloopdatum' => '2019-03-31',
+            'verloopdatum' => '2019-04-11',
             'created_at' => '2019-03-28 13:30:16',
             'updated_at' => '2019-03-28 13:30:16',
         ]);

@@ -13,9 +13,10 @@ class BetalenController extends Controller
     public function index($id)
     {
         $verzoek = betaalverzoeken::where('id', '=', $id)->first();
-        if (Auth::user()->getAuthIdentifier() == $verzoek->Userid || new \DateTime($verzoek->verloopdatum) < new \DateTime('now'))
-        {
-            return redirect('/betaalverzoeken');
+        if(!Auth::guest()) {
+            if (Auth::user()->getAuthIdentifier() == $verzoek->Userid || new \DateTime($verzoek->verloopdatum) < new \DateTime('now')) {
+                return redirect('/betaalverzoeken');
+            }
         }
         $user = User::where('id', '=', $verzoek->Userid)->first();
         $data = array('verzoek'=>$verzoek,'user' => $user);
@@ -42,7 +43,6 @@ class BetalenController extends Controller
         ]);
         $betaling->Verzoekid = $verzoek->id;
         $betaling->Paymentstatus = $payment->status;
-        $betaling->Personid = Auth::user()->getAuthIdentifier();
         $betaling->Paymentid = $payment->id;
         $betaling->Notities = $request->note;
         $betaling->Datum = $request->date;
