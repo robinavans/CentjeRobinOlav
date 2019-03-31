@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@extends('layouts.nav-bar')
 @section('content')
 
     <div class="content">
@@ -18,6 +18,7 @@
             <th>Omschrijving</th>
             <th>Bedrag</th>
             <th>Link om te delen</th>
+            <th>Verloopdatum</th>
         </tr>
 
         @foreach($verzoeken as $verzoek)
@@ -33,6 +34,9 @@
             </td>
             <td>
                 <a>{{'http://centje.localhost/betalen/'. $verzoek->id}}</a>
+            </td>
+            <td>
+                <a>{{ $verzoek->verloopdatum }}</a>
             </td>
             @if($verzoek->amountpaid <= 0)
                 <td>

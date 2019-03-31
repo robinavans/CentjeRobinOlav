@@ -17,7 +17,6 @@ class CreateBetalingsTable extends Migration
 
             $table->bigIncrements('id');
             $table->integer('Verzoekid')->nullable();
-            $table->integer('Personid')->nullable();
             $table->string('Paymentstatus')->nullable();
             $table->string('Paymentid')->nullable();
             $table->string('Notities')->nullable();
