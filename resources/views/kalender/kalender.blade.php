@@ -22,10 +22,11 @@
 @endsection
 
 @section('content')
+
     <div id="calendar">
     </div>
-<script>getData()
-</script>
+    <script>getData()</script>
+
 
     @endsection
 
