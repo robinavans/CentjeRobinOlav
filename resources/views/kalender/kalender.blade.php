@@ -13,8 +13,6 @@
             locale: '{{ App::getLocale() }}'
         })
     });
-
-
 </script>
 @endsection
 @section('style')
