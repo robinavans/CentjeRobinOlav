@@ -14,7 +14,8 @@ class KalenderController extends Controller
         App::setlocale($lang);
         return view('kalender.kalender');
     }
-    public function getData() {
+    public function getData()
+    {
         $sentjes = betaling::where('Personid', '=', Auth::user()->getAuthIdentifier())->get();
         response()->json($sentjes);
         return response()->json($sentjes);

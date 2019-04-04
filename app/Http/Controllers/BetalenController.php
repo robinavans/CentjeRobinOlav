@@ -15,12 +15,12 @@ class BetalenController extends Controller
     {
         App::setlocale($lang);
         $verzoek = betaalverzoeken::where('id', '=', $id)->first();
-        if(!Auth::guest()) {
+        if (!Auth::guest()) {
             if (Auth::user()->getAuthIdentifier() == $verzoek->Userid || new \DateTime($verzoek->verloopdatum) < new \DateTime('now')) {
                 return redirect('/betaalverzoeken');
             }
         }
-        if($verzoek == null){
+        if ($verzoek == null) {
             return redirect('/betaalverzoeken');
         }
         $user = User::where('id', '=', $verzoek->Userid)->first();
@@ -51,7 +51,7 @@ class BetalenController extends Controller
         ]);
         $betaling->Verzoekid = $verzoek->id;
         $betaling->Paymentstatus = $payment->status;
-        if(!Auth::guest()){
+        if (!Auth::guest()) {
             $betaling->Personid = Auth::user()->getAuthIdentifier();
         }
         $betaling->Paymentid = $payment->id;
@@ -69,8 +69,7 @@ class BetalenController extends Controller
         $payment= $mollie->payments->get($betaling->Paymentid);
         $betaling->Paymentstatus = $payment->status;
         $betaling->save();
-        if($payment->isPaid())
-        {
+        if ($payment->isPaid()) {
             $verzoek = betaalverzoeken::find($betaling->Verzoekid);
             $verzoek->amountpaid = $verzoek->amountpaid +1;
             $verzoek->save();
